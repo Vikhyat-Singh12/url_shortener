@@ -12,7 +12,7 @@ export const shortenUrl = async (req, res) => {
 
   try {
     const newUrl = await Url.create({ original_url: originalUrl, short_code });
-    res.json({ shortUrl: `${baseUrl}/${short_code}` });
+    res.json({ shortUrl: `${baseUrl}/api/${short_code}` });
   } catch (err) {
     res.status(500).json({ error: "Server Error" });
   }
