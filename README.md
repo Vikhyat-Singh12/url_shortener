@@ -6,7 +6,7 @@ A full-stack URL shortening service where users can paste a long URL, get a shor
 
 ## 🚀 Live Demo
 
-- **Frontend + Backend** (Render): [https://url-shortener-9id3.onrender.com](https://url-shortener-9id3.onrender.com)
+- **Frontend + Backend** (Render): ([https://url-shortener-9id3.onrender.com](https://url-shortener-9tmh.onrender.com)
 - 
   ⚠️ Please wait 2–3 minutes for the Render server to wake up.
 
