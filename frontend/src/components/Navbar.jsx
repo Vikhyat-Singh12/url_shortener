@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
             
             <Link
-              to="/admin"
+              to="/dashboard"
               className="group flex items-center space-x-2 px-4 py-2 rounded-xl text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-all duration-200 font-medium"
             >
               <BarChart3 className="w-4 h-4 group-hover:scale-110 transition-transform duration-200" />

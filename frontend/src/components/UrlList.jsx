@@ -144,7 +144,7 @@ export default function UrlList() {
                     <td className="px-6 py-4">
                       <div className="flex items-center space-x-2">
                         <a
-                          href={`/${url.short_code}`}
+                          href={`/api/${url.short_code}`}
                           target="_blank"
                           rel="noreferrer"
                           className="text-blue-600 hover:text-blue-800 font-medium text-sm hover:underline flex items-center space-x-1"

@@ -9,11 +9,24 @@ export default function UrlShortenerForm() {
   const [isLoading, setIsLoading] = useState(false);
   const { getshortenUrl, shortenUrl } = useUrlStore();
 
+  const isValidUrl = (url) => {
+    try {
+      new URL(url);
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!isValidUrl(originalUrl)) {
+      toast.error("Please enter a valid URL (e.g. https://example.com)");
+      return;
+    }
     setIsLoading(true);
     console.log(originalUrl);
-    
+
     try {
       await getshortenUrl(originalUrl);
       toast.success("URL shortened successfully!");

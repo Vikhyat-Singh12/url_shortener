@@ -18,7 +18,7 @@ export default function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/dashboard" element={<Admin />} />
       </Routes>
       <Toaster/>
     </Router>
